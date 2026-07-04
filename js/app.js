@@ -1,5 +1,5 @@
 /**
- * 全能工具箱 v1.0 — 主应用
+ * 工具小铺 v1.0 — 主应用
  * Pure frontend SPA with hash routing
  */
 (function () {
@@ -175,7 +175,7 @@
 
     let html = `
       <div class="home-hero">
-        <h1>全能工具箱</h1>
+        <h1>工具小铺</h1>
         <p>纯前端在线工具集合，所有数据在浏览器本地处理，不上传服务器，安全可靠</p>
       </div>
     `;
