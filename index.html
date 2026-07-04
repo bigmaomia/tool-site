@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全能工具箱 - AllInOne Tools</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 侧边栏导航 -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="#/" class="logo">
+      <span class="logo-icon">🔧</span>
+      <span class="logo-text">全能工具箱</span>
+    </a>
+  </div>
+
+  <div class="sidebar-search">
+    <input type="text" id="sidebarSearch" placeholder="搜索工具..." autocomplete="off">
+    <span class="search-icon">🔍</span>
+  </div>
+
+  <nav class="sidebar-nav">
+    <div class="nav-section">
+      <div class="nav-section-title" data-category="image">
+        🖼 图片工具
+        <span class="nav-arrow">▾</span>
+      </div>
+      <div class="nav-section-items" id="nav-image">
+        <a href="#/image/compress" class="nav-item">📉 图片压缩</a>
+        <a href="#/image/convert" class="nav-item">🔄 格式转换</a>
+        <a href="#/image/watermark" class="nav-item">💧 图片加水印</a>
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-section-title" data-category="pdf">
+        📄 文档工具
+        <span class="nav-arrow">▾</span>
+      </div>
+      <div class="nav-section-items" id="nav-pdf">
+        <a href="#/pdf/merge" class="nav-item">📎 PDF 合并</a>
+        <a href="#/pdf/split" class="nav-item">✂️ PDF 拆分</a>
+        <a href="#/pdf/to-image" class="nav-item">🖼 PDF 转图片</a>
+        <a href="#/pdf/compress" class="nav-item">📦 PDF 压缩</a>
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-section-title" data-category="dev">
+        🔧 开发工具
+        <span class="nav-arrow">▾</span>
+      </div>
+      <div class="nav-section-items" id="nav-dev">
+        <a href="#/dev/json" class="nav-item">{ } JSON 格式化</a>
+        <a href="#/dev/regex" class="nav-item">.* 正则测试器</a>
+        <a href="#/dev/base64" class="nav-item">🔐 Base64 编解码</a>
+        <a href="#/dev/diff" class="nav-item">📋 文本差异对比</a>
+        <a href="#/dev/uuid" class="nav-item">🆔 UUID 生成器</a>
+        <a href="#/dev/timestamp" class="nav-item">⏰ 时间戳工具</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="sidebar-footer">
+    <span>v1.0 · 纯前端 · 数据不上传</span>
+  </div>
+</aside>
+
+<!-- 遮罩层（移动端） -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- 主内容区 -->
+<main class="main-content">
+  <header class="topbar">
+    <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="topbar-search">
+      <input type="text" id="topbarSearch" placeholder="搜索所有工具..." autocomplete="off">
+      <span class="search-icon">🔍</span>
+    </div>
+    <div class="topbar-breadcrumb" id="breadcrumb">
+      <span>首页</span>
+    </div>
+  </header>
+
+  <div class="content" id="content">
+    <!-- 动态渲染 -->
+  </div>
+</main>
+
+<!-- Toast 提示 -->
+<div class="toast" id="toast"></div>
+
+<!-- CDN 库 -->
+<script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+<!-- 应用脚本 -->
+<script src="js/app.js"></script>
+</body>
+</html>
