@@ -93,7 +93,7 @@ img { max-width: 100%; }
 
 .sidebar-search input {
   width: 100%;
-  padding: 8px 12px 8px 44px;
+  padding: 8px 12px 8px 48px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--bg);
@@ -109,11 +109,13 @@ img { max-width: 100%; }
 
 .sidebar-search .search-icon {
   position: absolute;
-  left: 20px;
+  left: 30px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   opacity: 0.4;
+  pointer-events: none;
+  line-height: 1;
 }
 
 /* Navigation */
