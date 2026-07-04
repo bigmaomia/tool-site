@@ -93,7 +93,7 @@ img { max-width: 100%; }
 
 .sidebar-search input {
   width: 100%;
-  padding: 8px 12px 8px 38px;
+  padding: 8px 12px 8px 44px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--bg);
@@ -109,7 +109,7 @@ img { max-width: 100%; }
 
 .sidebar-search .search-icon {
   position: absolute;
-  left: 22px;
+  left: 20px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 0.85rem;
